@@ -4,7 +4,7 @@ public class App {
 
 	
 	public static void main(String[] args) {
-		byte byt = 25;
+		byte byt = 0125;
 		short shrt = 255;
 		int i = 2_100_000_000;
 //		Without the L Java thinks it's an int
@@ -21,6 +21,8 @@ public class App {
 	
 		// Primitives can never be null
 		s = null;
-		
+		char capital = 'j' - 32;
+
+		System.out.println(capital);
 	}
 }
