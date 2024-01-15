@@ -22,6 +22,8 @@ public class App {
 		int product = add(12, 4) * add(27, 6);
 
 		System.out.println(product);
+		
+		printInline("hello", "world");
 	}
 
 	public static boolean greaterThan(int a, int b) {
@@ -30,5 +32,9 @@ public class App {
 
 	public static int add(int a, int b) {
 		return a + b;
+	}
+	
+	static void printInline(String... strings) {
+		System.out.println(String.join(" ", strings));
 	}
 }
