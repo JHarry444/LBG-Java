@@ -29,22 +29,27 @@ public class Exercises {
 
 	public static String fizzBuzz(int num) {
 		String output = "";
-		if (num % 3 == 0)
+		if (num % 3 == 0) {
 			output += "Fizz";
-		if (num % 5 == 0)
+		}
+		if (num % 5 == 0) {
 			output += "Buzz";
-		if (num % 10 == 0)
+		}
+		if (num % 10 == 0) {
 			output += "Yowzer";
+		}
 
-		if (output.length() == 0)
+		if (output.length() == 0) {
 			output += num;
+		}
 
 		return output;
 	}
 
 	public static int sumDigits(int num) {
-		if (num < 10 || num > 99)
+		if (num < 10 || num > 99) {
 			return -1; // basically an error
+		}
 		int sum = 0;
 		int tens = num / 10;
 		int units = num % 10;
@@ -69,8 +74,9 @@ public class Exercises {
 		} else {
 			out += tensArray[tens];
 
-			if (tens > 1 && units > 0)
+			if (tens > 1 && units > 0) {
 				out += "-";
+			}
 
 			out += unitsArray[units];
 		}
