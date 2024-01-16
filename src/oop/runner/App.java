@@ -5,11 +5,7 @@ import oop.data.Cat;
 public class App {
 
 	public static void main(String[] args) {
-		Cat moggy = new Cat();
-		moggy.setName("Tiddles");
-		moggy.setBreed("Persian");
-		moggy.setAge(12);
-		moggy.setColour("Blonde");
+		Cat moggy = new Cat("Tiddles", "Persian", 12, "Blonde");
 
 		moggy.print();
 		Cat moggy2 = new Cat();

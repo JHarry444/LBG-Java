@@ -10,6 +10,24 @@ public class Cat {
 
 	private int age;
 
+	public Cat(String name, String breed, int age, String colour) {
+		// using the setters keeps the validation we wrote earlier
+		setName(name);
+		setBreed(breed);
+		setAge(age);
+		// auto-generate will look like this:
+		this.colour = colour;
+	}
+
+	public Cat(String breed, String colour) {
+		this.breed = breed;
+		this.colour = colour;
+	}
+
+	public Cat() {
+
+	}
+
 	public void sleep() {
 		System.out.println("zzzz");
 	}
