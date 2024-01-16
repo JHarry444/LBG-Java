@@ -1,7 +1,9 @@
 package oop.data;
 
-public class Dog {
+public class Dog extends Pet {
 
-//	public Dog() {
-//	}
+	public void bark() {
+		System.out.println("W00f");
+	}
+
 }

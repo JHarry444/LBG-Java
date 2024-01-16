@@ -1,6 +1,8 @@
 package oop.runner;
 
+import oop.data.Bird;
 import oop.data.Cat;
+import oop.data.Dog;
 
 public class App {
 
@@ -24,6 +26,15 @@ public class App {
 			cat.getAge();
 		}
 		moggy.setAge(moggy.getAge() + 1);
+
+		Dog doggy = new Dog();
+		doggy.setName("Peppy");
+
+		doggy.print();
+
+		Bird flappy = new Bird();
+		flappy.setName("polly");
+		flappy.setFlying(true);
 	}
 
 }
