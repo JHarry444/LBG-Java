@@ -2,14 +2,11 @@ package oop.data;
 
 public class Cat extends Pet {
 
-	public Cat() {
-	}
+	private boolean outdoor;
 
-	public Cat(String name, String breed, int age, String colour) {
-		setName(name);
-		setAge(age);
-		setBreed(breed);
-		setColour(colour);
+	public Cat(String name, int age, String breed, String colour, boolean outdoor) {
+		super(name, age, breed, colour);
+		this.outdoor = outdoor;
 	}
 
 	public void sleep() {
@@ -18,6 +15,14 @@ public class Cat extends Pet {
 
 	public void meow() {
 		System.out.println("ME0W");
+	}
+
+	public boolean isOutdoor() {
+		return outdoor;
+	}
+
+	public void setOutdoor(boolean outdoor) {
+		this.outdoor = outdoor;
 	}
 
 }

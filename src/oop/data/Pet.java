@@ -1,6 +1,7 @@
 package oop.data;
 
-public class Pet {
+// DO NOT DO THIS!!11!!!
+public class Pet extends Object {
 
 	private String name;
 
@@ -11,7 +12,7 @@ public class Pet {
 	private String colour;
 
 	public Pet() {
-		// default constructor
+		super();
 	}
 
 	public Pet(String name, int age, String breed, String colour) {
