@@ -1,39 +1,30 @@
 package oop.runner;
 
+import oop.data.Bird;
 import oop.data.Cat;
+import oop.data.Dog;
+import oop.data.Pet;
 
 public class App {
 
 	public static void main(String[] args) {
 		Cat moggy = new Cat("Tiddles", 12, "Persian", "Blonde", false);
 
-		moggy.print();
+//		moggy.print();
 
-//		Cat moggy2 = new Cat();
-//		moggy2.setName("Jess");
-//		moggy2.setAge(125);
-//		moggy2.setColour("Black And White");
-//
-//		moggy2.print();
-//		moggy2.sleep();
-//
-//		Cat[] cats = { moggy, moggy2 };
-//
-//		// for each cat of cats
-//		for (Cat cat : cats) {
-//			cat.print();
-//			cat.getAge();
-//		}
-//		moggy.setAge(moggy.getAge() + 1);
-//
-//		Dog doggy = new Dog();
-//		doggy.setName("Peppy");
-//
+		Dog doggy = new Dog("Rex", 4, "Alsation", "Brown");
 //		doggy.print();
-//
-//		Bird flappy = new Bird();
-//		flappy.setName("polly");
-//		flappy.setFlying(true);
+
+		Pet p = new Dog("Spot", 8, "Dalmation", "Black + White");
+		Pet p2 = new Cat("Garfield", 47, "Animated", "Ginger", false);
+
+		Pet[] pets = { p, p2, new Bird() };
+
+		for (Pet pet : pets) {
+			pet.print();
+		}
+
+		Object[] objs = { 12, "fgdnkjdn", true, new Cat() };
 	}
 
 }
