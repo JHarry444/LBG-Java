@@ -43,10 +43,9 @@ public class Kennel {
 		pets.remove(pet);
 	}
 
-	public void print() {
-		System.out.println("NAME: " + this.getName());
-		for (Pet pet : pets) {
-			pet.print();
-		}
+	@Override
+	public String toString() {
+		return "Kennel [name=" + name + ", pets=" + pets + "]";
 	}
+
 }

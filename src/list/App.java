@@ -64,7 +64,7 @@ public class App {
 
 		System.out.println("GET CLASS:");
 		for (Pet pet : pets) {
-			pet.print();
+//			pet.print();
 			System.out.println(pet.getClass().getSimpleName());
 		}
 
@@ -73,10 +73,10 @@ public class App {
 		myKennel.board(new Cat("Tiddles", 12, "Happy", "Blue", false));
 		myKennel.board(new Dog("Pongo", 24, "Dalmation", "Black + White"));
 		myKennel.board(new Bird());
-		myKennel.print();
+		System.out.println(myKennel);
 
 		myKennel.collect(new Cat("Tiddles", 12, "Happy", "Blue", false));
-		myKennel.print();
+		System.out.println(myKennel);
 
 	}
 

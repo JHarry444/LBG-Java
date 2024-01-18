@@ -23,17 +23,23 @@ public class Cat extends Pet {
 		System.out.println("ME0W");
 	}
 
-	@Override
-	public void print() {
-		super.print();
-
-		System.out.println("Outdoor: " + this.outdoor);
-
-	}
+//	@Override
+//	public void print() {
+//		super.print();
+//
+//		System.out.println("Outdoor: " + this.outdoor);
+//
+//	}
 
 	@Override
 	public int hashCode() {
 		return Objects.hash(outdoor);
+	}
+
+	@Override
+	public String toString() {
+		return "Cat [outdoor=" + outdoor + ", name()=" + getName() + ", age=" + getAge() + ", breed=" + getBreed()
+				+ ", colour=" + getColour() + "]";
 	}
 
 	@Override

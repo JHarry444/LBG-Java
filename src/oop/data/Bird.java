@@ -23,10 +23,10 @@ public class Bird extends Pet {
 		this.flying = flying;
 	}
 
-	@Override
-	public void print() {
-		super.print();
-		System.out.println("Flying: " + this.flying);
-	}
+//	@Override
+//	public void print() {
+//		super.print();
+//		System.out.println("Flying: " + this.flying);
+//	}
 
 }

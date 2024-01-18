@@ -46,12 +46,17 @@ public class Pet extends Object {
 				&& Objects.equals(name, other.name);
 	}
 
-	public void print() {
-		System.out.println("Name: " + this.name);
-		System.out.println("Age: " + this.age);
-		System.out.println("Breed: " + this.breed);
-		System.out.println("Colour: " + this.colour);
+	@Override
+	public String toString() {
+		return "Pet [name=" + name + ", age=" + age + ", breed=" + breed + ", colour=" + colour + "]";
 	}
+
+//	public void print() {
+//		System.out.println("Name: " + this.name);
+//		System.out.println("Age: " + this.age);
+//		System.out.println("Breed: " + this.breed);
+//		System.out.println("Colour: " + this.colour);
+//	}
 
 	public String getName() {
 		return name;

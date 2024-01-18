@@ -14,4 +14,10 @@ public class Dog extends Pet {
 		System.out.println("W00f");
 	}
 
+	@Override
+	public String toString() {
+		return "Dog [ name=" + getName() + ", age=" + getAge() + ", breed=" + getBreed() + ", colour=" + getColour()
+				+ "]";
+	}
+
 }

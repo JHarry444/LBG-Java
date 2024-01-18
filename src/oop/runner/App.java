@@ -21,7 +21,7 @@ public class App {
 		Pet[] pets = { p, p2, new Bird() };
 
 		for (Pet pet : pets) {
-			pet.print();
+//			pet.print();
 		}
 
 		Object[] objs = { 12, "fgdnkjdn", true, new Cat() };

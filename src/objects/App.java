@@ -2,6 +2,7 @@ package objects;
 
 import oop.data.Cat;
 import oop.data.Dog;
+import oop.data.Tortoise;
 
 public class App {
 
@@ -22,6 +23,13 @@ public class App {
 
 		System.out.println("d == d2: " + (d == d2));
 		System.out.println("d.equals(d2): " + (d.equals(d2)));
+
+		// these two lines are the same
+		// cos sysout uses toString() automatically
+		System.out.println(c.toString());
+		System.out.println(c);
+
+		System.out.println(new Tortoise());
 	}
 
 }
