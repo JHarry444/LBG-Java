@@ -10,8 +10,9 @@ public class Dog extends Pet {
 		super();
 	}
 
-	public void bark() {
-		System.out.println("W00f");
+	@Override
+	public String makeNoise() {
+		return "W00f";
 	}
 
 	@Override

@@ -23,6 +23,11 @@ public class Bird extends Pet {
 		this.flying = flying;
 	}
 
+	@Override
+	public String makeNoise() {
+		return "I t'ought I taw a putty tat";
+	}
+
 //	@Override
 //	public void print() {
 //		super.print();

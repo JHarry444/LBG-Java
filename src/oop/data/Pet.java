@@ -3,7 +3,7 @@ package oop.data;
 import java.util.Objects;
 
 // DO NOT DO THIS!!11!!!
-public class Pet extends Object {
+public abstract class Pet extends Object {
 
 	private String name;
 
@@ -24,6 +24,8 @@ public class Pet extends Object {
 		this.breed = breed;
 		this.colour = colour;
 	}
+
+	public abstract String makeNoise();
 
 	@Override
 	public int hashCode() {

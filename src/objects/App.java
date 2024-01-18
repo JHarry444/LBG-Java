@@ -2,7 +2,6 @@ package objects;
 
 import oop.data.Cat;
 import oop.data.Dog;
-import oop.data.Tortoise;
 
 public class App {
 
@@ -29,7 +28,6 @@ public class App {
 		System.out.println(c.toString());
 		System.out.println(c);
 
-		System.out.println(new Tortoise());
 	}
 
 }
