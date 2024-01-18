@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import oop.data.Bird;
 import oop.data.Cat;
 import oop.data.Dog;
+import oop.data.Pet;
 
 public class App {
 
@@ -53,25 +54,30 @@ public class App {
 			System.out.println("Num: " + num);
 		}
 
-//		ArrayList<Pet> pets = new ArrayList<>();
-//
-//		pets.add(new Cat("Tiddles", 12, "Happy", "Blue", false));
-//		pets.add(new Dog("Pongo", 24, "Dalmation", "Black + White"));
-//		pets.add(new Bird());
-//
-//		System.out.println(pets);
-//
-//		for (Pet pet : pets) {
-//			pet.print();
-//		}
+		ArrayList<Pet> pets = new ArrayList<>();
+
+		pets.add(new Cat("Tiddles", 12, "Happy", "Blue", false));
+		pets.add(new Dog("Pongo", 24, "Dalmation", "Black + White"));
+		pets.add(new Bird());
+
+		System.out.println(pets);
+
+		System.out.println("GET CLASS:");
+		for (Pet pet : pets) {
+			pet.print();
+			System.out.println(pet.getClass().getSimpleName());
+		}
 
 		Kennel myKennel = new Kennel("Battersea Dogs Home");
 
 		myKennel.board(new Cat("Tiddles", 12, "Happy", "Blue", false));
 		myKennel.board(new Dog("Pongo", 24, "Dalmation", "Black + White"));
 		myKennel.board(new Bird());
-
 		myKennel.print();
+
+		myKennel.collect(new Cat("Tiddles", 12, "Happy", "Blue", false));
+		myKennel.print();
+
 	}
 
 }

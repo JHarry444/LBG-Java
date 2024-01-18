@@ -1,5 +1,7 @@
 package oop.data;
 
+import java.util.Objects;
+
 // DO NOT DO THIS!!11!!!
 public class Pet extends Object {
 
@@ -21,6 +23,27 @@ public class Pet extends Object {
 		this.age = age;
 		this.breed = breed;
 		this.colour = colour;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(age, breed, colour, name);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (getClass() != obj.getClass()) {
+			return false;
+		}
+		Pet other = (Pet) obj;
+		return age == other.age && Objects.equals(breed, other.breed) && Objects.equals(colour, other.colour)
+				&& Objects.equals(name, other.name);
 	}
 
 	public void print() {

@@ -44,6 +44,7 @@ public class Kennel {
 	}
 
 	public void print() {
+		System.out.println("NAME: " + this.getName());
 		for (Pet pet : pets) {
 			pet.print();
 		}

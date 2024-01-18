@@ -1,5 +1,7 @@
 package oop.data;
 
+import java.util.Objects;
+
 public class Cat extends Pet {
 
 	private boolean outdoor;
@@ -27,6 +29,36 @@ public class Cat extends Pet {
 
 		System.out.println("Outdoor: " + this.outdoor);
 
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(outdoor);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (getClass() != obj.getClass()) {
+			return false;
+		}
+		// Casts the other obj to be a Cat
+		Cat other = (Cat) obj;
+
+		if (!super.equals(obj)) {
+			return false;
+		}
+
+		if (this.outdoor != other.isOutdoor()) {
+			return false;
+		}
+
+		return true;
 	}
 
 	public boolean isOutdoor() {
