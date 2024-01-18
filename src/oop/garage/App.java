@@ -1,29 +1,23 @@
 package oop.garage;
 
 import oop.garage.vehicle.Car;
-import oop.garage.vehicle.Vehicle;
+import oop.garage.vehicle.Plane;
 
 public class App {
 
 	public static void main(String[] args) {
-		Vehicle v = new Vehicle();
+		Garage garage = new Garage();
 
-		v.print();
+		garage.dropOff(new Car("Lambo", "Murcielago", "Black", 10));
+		garage.dropOff(new Car("Ferrari", "Enzo", "Red", 8));
+		garage.dropOff(new Car("Fiat", "Panda", "White", 20));
 
-		v.setColour("Black");
-		v.setMake("Ford");
-		v.setModel("T");
+		garage.dropOff(new Plane("Boeing", "747", "White", false));
+		garage.dropOff(new Plane("Rolls Royce", "Spitfire", "Green", true));
 
-		v.print();
+		System.out.println(garage);
 
-		Car c = new Car();
-
-		c.setColour("White");
-		c.setMake("Fiat");
-		c.setModel("Panda");
-		c.setBootSize(4494);
-
-		c.print();
+		System.out.println("Bill: " + garage.fix());
 	}
 
 }

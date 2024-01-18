@@ -1,6 +1,6 @@
 package oop.garage.vehicle;
 
-public class Vehicle {
+public abstract class Vehicle {
 
 	private String make;
 	private String model;
@@ -21,6 +21,13 @@ public class Vehicle {
 		System.out.println("Make: " + this.make);
 		System.out.println("Model: " + this.model);
 		System.out.println("Colour: " + this.colour);
+	}
+
+	public abstract double calcBill();
+
+	@Override
+	public String toString() {
+		return "Vehicle [make=" + make + ", model=" + model + ", colour=" + colour + "]";
 	}
 
 	public String getMake() {
