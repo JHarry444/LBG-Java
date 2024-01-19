@@ -1,6 +1,8 @@
 package oop.garage.vehicle;
 
-public class Plane extends Vehicle {
+import interfaces.Flyable;
+
+public class Plane extends Vehicle implements Flyable {
 
 	private boolean propeller;
 
@@ -11,6 +13,11 @@ public class Plane extends Vehicle {
 	public Plane(String make, String model, String colour, boolean propeller) {
 		super(make, model, colour);
 		this.propeller = propeller;
+	}
+
+	@Override
+	public void fly() {
+		System.out.println("ZOOM");
 	}
 
 	@Override

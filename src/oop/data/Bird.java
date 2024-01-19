@@ -1,6 +1,8 @@
 package oop.data;
 
-public class Bird extends Pet {
+import interfaces.Flyable;
+
+public class Bird extends Pet implements Flyable {
 
 	private boolean flying;
 
@@ -26,6 +28,11 @@ public class Bird extends Pet {
 	@Override
 	public String makeNoise() {
 		return "I t'ought I taw a putty tat";
+	}
+
+	@Override
+	public void fly() {
+		System.out.println("FLAP FLAP");
 	}
 
 //	@Override
