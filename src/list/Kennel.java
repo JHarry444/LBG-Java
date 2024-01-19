@@ -1,6 +1,7 @@
 package list;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import oop.data.Pet;
 
@@ -41,6 +42,16 @@ public class Kennel {
 
 	public void collect(Pet pet) {
 		pets.remove(pet);
+	}
+
+	public boolean collect(String name) {
+		List<Pet> toRemove = new ArrayList<Pet>();
+		for (Pet pet : this.pets) {
+			if (pet.getName().equals(name)) {
+				toRemove.add(pet);
+			}
+		}
+		return this.pets.removeAll(toRemove);
 	}
 
 	@Override
