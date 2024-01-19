@@ -30,7 +30,7 @@ public class Garage {
 		return bill * 1.19;
 	}
 
-	public int countVehilces() {
+	public int countVehicles() {
 		return this.vehicles.size();
 	}
 
