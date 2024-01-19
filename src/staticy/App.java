@@ -11,6 +11,5 @@ public class App {
 //		System.out.println(p2.latinName);
 
 		System.out.println(Person.getLatinName());
-
 	}
 }

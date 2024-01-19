@@ -23,8 +23,7 @@ public class Car extends Vehicle {
 
 	@Override
 	public String toString() {
-		return "Car [bootSize=" + bootSize + ", make=" + getMake() + ", model=" + getModel() + ", colour=" + getColour()
-				+ "]";
+		return "Car [" + super.toString() + "bootSize=" + bootSize + "]";
 	}
 
 	@Override

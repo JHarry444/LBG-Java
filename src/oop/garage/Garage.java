@@ -16,8 +16,17 @@ public class Garage {
 		return this.vehicles.remove(v);
 	}
 
-	public Vehicle collect(int index) {
-		return this.vehicles.remove(index);
+//	public Vehicle collect(int index) {
+//		return this.vehicles.remove(index);
+//	}
+
+	public boolean collect(int id) {
+		for (Vehicle v : this.vehicles) {
+			if (id == v.getId()) {
+				return this.vehicles.remove(v);
+			}
+		}
+		return false;
 	}
 
 	public double fix() {

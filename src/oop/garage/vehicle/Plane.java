@@ -13,6 +13,11 @@ public class Plane extends Vehicle {
 		this.propeller = propeller;
 	}
 
+	@Override
+	public String toString() {
+		return "Plane [" + super.toString() + ", propeller=" + propeller + "]";
+	}
+
 	public boolean isPropeller() {
 		return propeller;
 	}
