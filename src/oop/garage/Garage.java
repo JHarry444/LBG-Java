@@ -1,6 +1,7 @@
 package oop.garage;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import oop.garage.vehicle.Vehicle;
 
@@ -27,6 +28,19 @@ public class Garage {
 			}
 		}
 		return false;
+	}
+
+	public boolean collect(int... ids) {
+		List<Vehicle> toRemove = new ArrayList<>();
+		for (Vehicle v : this.vehicles) {
+			for (int id : ids) {
+				if (id == v.getId()) {
+					toRemove.add(v);
+					break;
+				}
+			}
+		}
+		return this.vehicles.removeAll(toRemove);
 	}
 
 	public double fix() {

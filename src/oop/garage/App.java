@@ -17,7 +17,7 @@ public class App {
 
 		System.out.println(garage);
 
-		System.out.println("Removed id 3: " + garage.collect(3));
+		System.out.println("Removed id 1, 2, 3: " + garage.collect(1, 2, 3));
 		System.out.println("Removed id 99: " + garage.collect(99));
 
 		System.out.println(garage);
